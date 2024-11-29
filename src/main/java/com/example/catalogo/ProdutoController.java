@@ -23,4 +23,10 @@ public class ProdutoController {
         return repository.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Produto findById(@PathVariable String id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto com ID " + id + " não encontrado"));
+    }
+
 }
