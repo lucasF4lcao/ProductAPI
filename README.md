@@ -1,2 +1,2 @@
-product-hub.up.railway.app/produtos
+product-hub.up.railway.app/produtos /
 interfaceproduto-production.up.railway.app
